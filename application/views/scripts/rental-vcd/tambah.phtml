@@ -1,0 +1,51 @@
+<?php echo $this->doctype['HTML']; ?>
+<html>
+    <head>
+        <title>Tambah</title>
+    </head>
+    <body>
+        <h1>Tambah VCD</h1>
+        <form method="post" action="simpanvcd" >
+            <table>
+                <tr>
+                    <td>IDVCD:</td>
+                    <td><input type="text" /></td>
+                </tr>
+                
+                <tr>
+                    <td>Kategory</td>
+                    <td>
+                        <select name="kategory">
+                        <?php 
+                            foreach ($this->kategorivcd as $kategory) 
+                            {
+                        ?>
+                            <option value="<?php echo $kategory; ?>" ><?php echo $kategory; ?></option>
+                       <?php } ?>
+                        </select>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td align="top">Deskripsi:</td>
+                    <td><textarea cols="30" rows="5"></textarea></td>
+                </tr>
+                
+                <tr>
+                    <td>Banyak:</td>
+                    <td><input type="text" name="txtBanyak" /></td>
+                </tr>
+                
+                <tr>
+                    <td>Harga:</td>
+                    <td><input type="text" name="txtHarga" /></td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2"><input type="submit" value="Kirim" /></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
+    

@@ -1,0 +1,22 @@
+<h1>Data pelanggan</h1>
+<?php 
+    foreach ($this->pelanggan as $pelanggan)
+    {
+        echo $pelanggan .'<br />';
+    }
+    echo '<b>Bayak Pelanggan: </b>' . $this->bykPelanggan . '<br />'; 
+    echo '<b>Posisi Rifki   : </b>' . $this->posisi       . '<br />';
+    
+    echo "<h1>Data Mahasiswa</h1><br />";
+    foreach ($this->mahasiswa as $mahasiswa)
+    {
+        echo $mahasiswa . '<br />';
+    }
+     echo '<b>Bayak Pelanggan: </b>'. $this->bykMahasiswa . '<br />';
+     echo '<b>Posisi Andri   : </b>'. $this->posisiMhs . '<br />';
+    foreach ($this->musics as $musics) 
+    {
+        echo $musics . "<br />";
+    }
+     
+?>
